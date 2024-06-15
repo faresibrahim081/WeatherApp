@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background-color: #222;
+    text-transform: capitalize;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 470px;
+    width: 90%;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    color: #fff;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.card .search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8px;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    margin-right: 20px;
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 50px;
+    height: 60px;
+    padding: 9px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 20px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h1 sup{
+    font-size: 40px;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    margin-top: 10px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+}
+.col p{
+    text-transform: lowercase;
+}
+.humidity, .wind{
+    font-size: 25px;
+    margin-top: -6px;
+}
+.weather {
+    display: none;
+}
+.error{
+    text-align: left;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    display: none;
+}
+
+@media (max-width: 567px) {
+    .card{
+        width: 85%;
+        margin-inline: auto;
+        padding: 40px 30px 40px 20px;
+    }
+    .search input{
+        margin-right: 8px;
+    }
+
+}  
